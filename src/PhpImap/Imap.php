@@ -939,7 +939,7 @@ final class Imap
                 $criteria,
                 $reverse,
                 $options,
-                self::encodeStringToUtf7Imap($search_criteria)
+                $search_criteria
             );
         } else {
             $result = \imap_sort(
